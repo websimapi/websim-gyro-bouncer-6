@@ -63,15 +63,15 @@ body, html {
 }
 
 #game-over-screen {
-    max-height: 90vh;
-    overflow-y: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    max-height: 95vh;
+    padding: 10px;
+    justify-content: center;
 }
 
 #replay-canvas {
     width: 80%;
-    max-width: 300px;
+    max-width: 250px;
+    max-height: 35vh;
     aspect-ratio: 9 / 16;
     background-color: #3d5a80;
     border-radius: 5px;
@@ -81,6 +81,8 @@ body, html {
 
 h1 {
     margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.8em;
     color: #ee6c4d;
 }
 
@@ -93,7 +95,7 @@ button {
     border-radius: 5px;
     color: #293241;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .permission-info {
@@ -113,6 +115,6 @@ button {
 }
 
 #game-over-screen p {
-    font-size: 1.1em;
-    margin: 8px 0;
+    font-size: 1em;
+    margin: 4px 0;
 }
