@@ -39,17 +39,25 @@ body, html {
     align-items: center;
     text-align: center;
     pointer-events: none; /* Allow clicks to pass through to canvas if needed */
+    padding: 15px; /* Add some padding to avoid elements hitting screen edges */
 }
 
 .hidden {
     display: none !important;
 }
 
-#start-screen, #game-over-screen {
+.ui-panel {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     pointer-events: auto; /* Re-enable pointer events for these elements */
+    width: 100%;
+    max-width: 500px;
+}
+
+#start-screen, #game-over-screen {
+    /* These styles were moved to the .ui-panel class */
+    /* background-color, padding, border-radius, pointer-events are now in .ui-panel */
 }
 
 #replay-canvas {
