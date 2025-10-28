@@ -53,11 +53,20 @@ body, html {
     pointer-events: auto; /* Re-enable pointer events for these elements */
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#start-screen, #game-over-screen {
-    /* These styles were moved to the .ui-panel class */
-    /* background-color, padding, border-radius, pointer-events are now in .ui-panel */
+#start-screen {
+    justify-content: center;
+}
+
+#game-over-screen {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #replay-canvas {
@@ -66,7 +75,7 @@ body, html {
     aspect-ratio: 9 / 16;
     background-color: #3d5a80;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 2px solid #98c1d9;
 }
 
@@ -76,15 +85,15 @@ h1 {
 }
 
 button {
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 12px 25px;
+    font-size: 1.1em;
     cursor: pointer;
     background-color: #e0fbfc;
     border: none;
     border-radius: 5px;
     color: #293241;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .permission-info {
@@ -104,6 +113,6 @@ button {
 }
 
 #game-over-screen p {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: 1.1em;
+    margin: 8px 0;
 }
